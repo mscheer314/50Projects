@@ -30,6 +30,7 @@ body {
 	flex: 0.5;
 	margin: 10px;
 	position: relative;
+	-webkit-transition: all 700ms ease-in;
 }
 
 .panel h3 {
@@ -47,7 +48,7 @@ body {
 
 .panel.active h3 {
 	opacity: 1;
-	transition: flex 0.3s ease-in 0.4s;
+	transition: opacity 0.3s ease-in 0.4s;
 }
 @media (max-width: 480px) {
 	.container {
@@ -55,7 +56,7 @@ body {
 	}
 
 	.panel:nth-of-type(4),
-	.panel:nth-of-type(4) {
+	.panel:nth-of-type(5) {
 		display: none;
 	}
 }
